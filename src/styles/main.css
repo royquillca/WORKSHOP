@@ -414,21 +414,62 @@ header p{
 }
 
 /* Registration Form */
-
-.form-user{
-  background-color: var(--tertiary-background);
-  font-size: 40px;
-  position: absolute;
-width: 734px;
-height: 350px;
-left: 528px;
-top: 3791px;
-
-background: #FFFFFF;
-box-shadow: -5px 3px 7px 5px rgba(0, 0, 0, 0.25);
-border-radius: 60px;
+.form-register{
+  width: 50%;
+  height: 350px;
+  background: #FFFFFF;
+  box-shadow: -5px 3px 7px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+  display: flex;
+  position: relative;
+  margin-bottom: -108px;
+  color: var(--main-background);
+}
+.form-register--caption{
+  width: 30%;
+  margin: auto 15px;
+  align-content: center;
+  vertical-align: middle;
+  text-align: center;
+}
+.form-register--caption h3{
+  font-size: 3.0rem;
+}
+.form-register--caption p{
+  font-size: 2.0rem;
+}
+.form-register--item{
+  align-items: center;
+  margin: auto;
+}
+.controls{
+  width:90%;
+  background: var(--tertiary-background);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  height: 45px;
+  border: 0px;
+  color: #FBFBFB;
+  font-weight: 600;
+}
+.controls .comment-user{
+  height: 30px;
 }
 
+::placeholder{
+  color: #FBFBFB;
+  font-weight: 600;
+}
+
+
+
+.form-register a{
+  text-decoration: none;
+}
+
+/* Footer */
 footer{
   background-color: var(--main-background);
   width: 100%;
